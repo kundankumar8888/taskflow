@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "total_tests": 1,
+    "passed_tests": 0,
+    "success_rate": 0.0,
+    "timestamp": "2026-01-20T02:17:33.075410"
+  },
+  "test_results": [
+    {
+      "test": "User Registration",
+      "success": false,
+      "details": "Status: 200, Response: {\"access_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZDg3ODM2ZjMtNzM5MC00Mjg5LWEyZGMtNGI1MTUwMzdkMjFjIiwiZXhwIjoxNzY4OTYxODUyfQ.0sKOe203XSNtSZShczBd4fX7mv6F_iTwGgjkpwj66xg\",\"token_type\":\"bearer\",\"user\":{\"id\":\"d87836f3-7390-4289-a2dc-4b515037d21c\",\"email\":\"test_a85e2e03@example.com\",\"full_name\":\"Test User\",\"created_at\":\"2026-01-20T02:17:32.651276+00:00\"}}",
+      "timestamp": "2026-01-20T02:17:33.075055"
+    }
+  ]
+}
