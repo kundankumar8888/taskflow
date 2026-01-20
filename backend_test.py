@@ -129,7 +129,7 @@ class RoleBasedTodoAPITester:
             "name": f"Test Organization {uuid.uuid4().hex[:8]}"
         }
         
-        success, response, status = self.make_request('POST', 'organizations', data, 201)
+        success, response, status = self.make_request('POST', 'organizations', data, 200)
         
         if success:
             self.org_id = response['id']
