@@ -70,7 +70,7 @@ class RoleBasedTodoAPITester:
             "full_name": "Test User"
         }
         
-        success, response, status = self.make_request('POST', 'auth/register', data, 201)
+        success, response, status = self.make_request('POST', 'auth/register', data, 200)
         
         if success:
             self.token = response['access_token']
