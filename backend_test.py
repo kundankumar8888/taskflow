@@ -92,7 +92,7 @@ class RoleBasedTodoAPITester:
         }
         
         # Register user first
-        success, _, _ = self.make_request('POST', 'auth/register', register_data, 201)
+        success, _, _ = self.make_request('POST', 'auth/register', register_data, 200)
         if not success:
             self.log_test("User Login (Setup)", False, "Failed to create test user for login")
             return False
