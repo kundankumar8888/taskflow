@@ -1,16 +1,100 @@
 {
   "summary": {
-    "total_tests": 1,
-    "passed_tests": 0,
-    "success_rate": 0.0,
-    "timestamp": "2026-01-20T02:17:33.075410"
+    "total_tests": 15,
+    "passed_tests": 15,
+    "success_rate": 100.0,
+    "timestamp": "2026-01-20T02:18:42.071383"
   },
   "test_results": [
     {
       "test": "User Registration",
-      "success": false,
-      "details": "Status: 200, Response: {\"access_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZDg3ODM2ZjMtNzM5MC00Mjg5LWEyZGMtNGI1MTUwMzdkMjFjIiwiZXhwIjoxNzY4OTYxODUyfQ.0sKOe203XSNtSZShczBd4fX7mv6F_iTwGgjkpwj66xg\",\"token_type\":\"bearer\",\"user\":{\"id\":\"d87836f3-7390-4289-a2dc-4b515037d21c\",\"email\":\"test_a85e2e03@example.com\",\"full_name\":\"Test User\",\"created_at\":\"2026-01-20T02:17:32.651276+00:00\"}}",
-      "timestamp": "2026-01-20T02:17:33.075055"
+      "success": true,
+      "details": "User created with ID: e380c2bd-ec2d-402a-bf6f-d8cf55240199",
+      "timestamp": "2026-01-20T02:18:28.213565"
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Login successful for login_test_66333c5f@example.com",
+      "timestamp": "2026-01-20T02:18:30.320887"
+    },
+    {
+      "test": "Get User Profile",
+      "success": true,
+      "details": "Retrieved profile for: test_ab45f1b3@example.com",
+      "timestamp": "2026-01-20T02:18:30.937766"
+    },
+    {
+      "test": "Create Organization",
+      "success": true,
+      "details": "Organization created with ID: 630ed0dd-c2f1-49fd-935b-9b288be77f14",
+      "timestamp": "2026-01-20T02:18:31.782700"
+    },
+    {
+      "test": "Get Organizations",
+      "success": true,
+      "details": "Retrieved 1 organizations",
+      "timestamp": "2026-01-20T02:18:32.607606"
+    },
+    {
+      "test": "Get Organization Details",
+      "success": true,
+      "details": "Retrieved org: Test Organization cb2a732f",
+      "timestamp": "2026-01-20T02:18:33.444556"
+    },
+    {
+      "test": "Invite Member",
+      "success": true,
+      "details": "Successfully invited invite_test_e50922a5@example.com",
+      "timestamp": "2026-01-20T02:18:34.916729"
+    },
+    {
+      "test": "Get Organization Members",
+      "success": true,
+      "details": "Retrieved 2 members",
+      "timestamp": "2026-01-20T02:18:35.736428"
+    },
+    {
+      "test": "Organization Stats",
+      "success": true,
+      "details": "Stats: {'total_tasks': 0, 'pending_tasks': 0, 'in_progress_tasks': 0, 'completed_tasks': 0, 'my_tasks': 0, 'members_count': 2}",
+      "timestamp": "2026-01-20T02:18:36.562964"
+    },
+    {
+      "test": "Create Task",
+      "success": true,
+      "details": "Task created with ID: b8c8bc81-9cdd-4fb8-8614-b3f3923a86e5",
+      "timestamp": "2026-01-20T02:18:37.202870"
+    },
+    {
+      "test": "Get Tasks",
+      "success": true,
+      "details": "Retrieved 1 tasks",
+      "timestamp": "2026-01-20T02:18:38.039538"
+    },
+    {
+      "test": "Update Task",
+      "success": true,
+      "details": "Task updated: Updated Test Task",
+      "timestamp": "2026-01-20T02:18:38.941720"
+    },
+    {
+      "test": "Delete Task",
+      "success": true,
+      "details": "Task deleted successfully",
+      "timestamp": "2026-01-20T02:18:39.759370"
+    },
+    {
+      "test": "Stripe Checkout",
+      "success": true,
+      "details": "Checkout session created: cs_test_a176HbzhJGky3Bo1wFDjWLJCF69SdS1Uiv7NnUvijeUnGjQ3dXbiLDMu6N",
+      "timestamp": "2026-01-20T02:18:41.442943"
+    },
+    {
+      "test": "Admin Access Control",
+      "success": true,
+      "details": "Correctly denied access to admin panel",
+      "timestamp": "2026-01-20T02:18:42.071191"
     }
   ]
 }
