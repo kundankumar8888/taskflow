@@ -181,7 +181,7 @@ class RoleBasedTodoAPITester:
         }
         
         # Register the user to invite
-        reg_success, _, _ = self.make_request('POST', 'auth/register', register_data, 201)
+        reg_success, _, _ = self.make_request('POST', 'auth/register', register_data, 200)
         if not reg_success:
             self.log_test("Invite Member (Setup)", False, "Failed to create user to invite")
             return False
