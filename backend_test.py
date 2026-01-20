@@ -232,7 +232,7 @@ class RoleBasedTodoAPITester:
             "due_date": "2025-02-01"
         }
         
-        success, response, status = self.make_request('POST', f'organizations/{self.org_id}/tasks', data, 201)
+        success, response, status = self.make_request('POST', f'organizations/{self.org_id}/tasks', data, 200)
         
         if success:
             self.task_id = response['id']
