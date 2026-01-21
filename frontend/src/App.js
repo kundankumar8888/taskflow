@@ -14,6 +14,7 @@ function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
     const token = localStorage.getItem('token');
     const userData = localStorage.getItem('user');
