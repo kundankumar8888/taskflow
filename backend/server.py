@@ -39,8 +39,19 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 @app.get("/")
-def health_check():
-    return {"status": "ok", "message": "Server is running"}
+async def health_check():
+    try:
+        # Check DB connection
+        await client.admin.command('ping')
+        db_status = "connected"
+    except Exception as e:
+        db_status = f"disconnected: {str(e)}"
+        
+    return {
+        "status": "ok", 
+        "message": "Server is running",
+        "database": db_status
+    }
 
 # ==================== MODELS ====================
 
