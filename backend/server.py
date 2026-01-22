@@ -761,10 +761,22 @@ async def get_org_stats(org_id: str, current_user = Depends(get_current_user)):
 # Include router
 app.include_router(api_router)
 
+# Update CORS to allow specific origins
+origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://taskflow-2frontend.onrender.com"
+]
+
+# Add environment variable origins if present
+env_origins = os.environ.get('CORS_ORIGINS')
+if env_origins:
+    origins.extend(env_origins.split(','))
+
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+    allow_origins=origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
