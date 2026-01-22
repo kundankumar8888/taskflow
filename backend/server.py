@@ -38,6 +38,10 @@ security = HTTPBearer()
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "Server is running"}
+
 # ==================== MODELS ====================
 
 class UserCreate(BaseModel):
